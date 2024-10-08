@@ -2,6 +2,8 @@ import express from "express"
 import authRoutes from "./routes/auth.route.js"
 import messageRoutes from "./routes/message.route.js"
 
+import dotednv from "dotenv"
+dotednv.config();
 const app = express()
 
 app.use("/api/auth", authRoutes)
